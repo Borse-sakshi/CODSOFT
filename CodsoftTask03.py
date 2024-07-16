@@ -1,8 +1,15 @@
+*/
+Task 03.
+Sakshi Borse
+/*
+
 import random
 import string
 
 def generate_password(length, complexity):
+    
     """Generate a random password based on given length and complexity"""
+    
     if complexity == 'weak':
         characters = string.ascii_letters + string.digits
     elif complexity == 'medium':
@@ -29,7 +36,9 @@ def main():
     try:
         password = generate_password(length, complexity)
         print("====================================")
+        
         print(f"\nGenerated Password: {password}")
+        
         print("==========XXX==========")
     except ValueError as ve:
         print(f"Comlexity not found: {ve}")
